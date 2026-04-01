@@ -7,6 +7,10 @@ export const fineTuneStyles = StyleSheet.create({
     paddingBottom: 24,
   },
 
+  scrollContent: {
+    paddingBottom: 24,
+  },
+
   keyboardAvoidingView: {
     flex: 1,
   },
@@ -133,7 +137,6 @@ export const fineTuneStyles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 6,
     marginTop: 0,
-
   },
 
   optionCard: {
@@ -282,6 +285,115 @@ export const fineTuneStyles = StyleSheet.create({
     height: 22,
   },
 
+  knownClubCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    marginTop: 10,
+  },
+
+  knownClubCardComplete: {
+    borderColor: 'rgba(121,226,164,0.95)',
+    shadowColor: '#79E2A4',
+    shadowOpacity: 0.14,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 2 },
+  },
+
+  knownClubHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
+
+  knownHeaderCompletionWrap: {
+    width: 26,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+  },
+
+  knownHeaderNameWrap: {
+    flex: 1,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    minWidth: 0,
+  },
+
+  knownHeaderValueWrap: {
+    minWidth: 72,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: 8,
+  },
+
+  knownHeaderName: {
+    fontSize: 14,
+    fontWeight: '800',
+    color: '#FFFFFF',
+  },
+
+  knownHeaderValue: {
+    fontSize: 16,
+    fontWeight: '900',
+  },
+
+  knownHeaderChevron: {
+    fontSize: 16,
+    fontWeight: '900',
+    color: PAGE_COLORS.gold,
+  },
+
+  knownExpandedBody: {
+    marginTop: 12,
+    gap: 12,
+  },
+
+  knownTopMetricsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
+
+  knownMetricBlockLeft: {
+    flex: 1,
+    alignItems: 'flex-start',
+    minWidth: 0,
+  },
+
+  knownMetricBlockCenter: {
+    width: 96,
+    alignItems: 'center',
+  },
+
+  knownMetricLabel: {
+    fontSize: 10,
+    fontWeight: '800',
+    color: 'rgba(220,230,255,0.58)',
+    textTransform: 'uppercase',
+    marginBottom: 4,
+  },
+
+  knownMetricValue: {
+    fontSize: 16,
+    fontWeight: '900',
+    color: '#FFFFFF',
+  },
+
+  knownMetricValueCenter: {
+    fontSize: 20,
+    fontWeight: '900',
+  },
+
+  knownSliderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+
   basicInputsWrap: {
     marginTop: 0,
   },
@@ -382,38 +494,33 @@ export const fineTuneStyles = StyleSheet.create({
   },
 
   basicEstimatedSwingweightText: {
-    minWidth: 40,
-    textAlign: 'right',
-    marginRight: 2,
+    minWidth: 46,
   },
 
   basicChevron: {
-    width: 16,
-    textAlign: 'right',
-    fontSize: 15,
+    fontSize: 16,
     fontWeight: '900',
-    color: 'rgba(220,230,255,0.72)',
-    lineHeight: 16,
+    color: PAGE_COLORS.gold,
   },
 
   basicIssueChip: {
-    borderRadius: 999,
-    paddingVertical: 3,
     paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 999,
     backgroundColor: 'rgba(255,123,123,0.14)',
     borderWidth: 1,
     borderColor: 'rgba(255,123,123,0.35)',
-    marginRight: 2,
   },
 
   basicIssueChipText: {
     fontSize: 10,
     fontWeight: '800',
-    color: '#FFB3B3',
+    color: '#FF7B7B',
   },
 
   basicExpandedBody: {
     marginTop: 12,
+    gap: 12,
   },
 
   basicInputRow: {
@@ -426,38 +533,36 @@ export const fineTuneStyles = StyleSheet.create({
   },
 
   basicInputLabel: {
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: '800',
-    color: 'rgba(220,230,255,0.62)',
-    textAlign: 'center',
-    marginBottom: 6,
+    color: 'rgba(220,230,255,0.58)',
     textTransform: 'uppercase',
-    letterSpacing: 0.5,
+    marginBottom: 6,
   },
 
   basicInput: {
     height: 42,
     borderRadius: 12,
-    paddingHorizontal: 10,
-    textAlign: 'center',
-    fontSize: 14,
-    fontWeight: '800',
+    paddingHorizontal: 12,
     color: '#FFFFFF',
     backgroundColor: 'rgba(255,255,255,0.05)',
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.10)',
+    fontSize: 15,
+    fontWeight: '700',
   },
 
   bpInlineControl: {
     height: 42,
     borderRadius: 12,
     paddingHorizontal: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
     backgroundColor: 'rgba(255,255,255,0.05)',
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.10)',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
   },
 
   bpInlineButton: {
@@ -473,9 +578,9 @@ export const fineTuneStyles = StyleSheet.create({
 
   bpInlineButtonText: {
     color: '#4ADEFF',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '900',
-    lineHeight: 20,
+    lineHeight: 18,
     marginTop: -1,
   },
 
@@ -483,37 +588,84 @@ export const fineTuneStyles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 8,
   },
 
   bpInlineValue: {
-    fontSize: 18,
-    fontWeight: '900',
+    fontSize: 15,
+    fontWeight: '800',
     color: '#FFFFFF',
-    textAlign: 'center',
   },
 
-  saveButton: {
-    marginTop: 22,
-    height: 64,
-    borderRadius: 24,
+  lengthInputSection: {
+    marginTop: 2,
+  },
+
+  lengthInputLabel: {
+    fontSize: 10,
+    fontWeight: '800',
+    color: 'rgba(220,230,255,0.58)',
+    textTransform: 'uppercase',
+    marginBottom: 6,
+  },
+
+  lengthInlineControl: {
+    height: 50,
+    borderRadius: 12,
+    paddingHorizontal: 8,
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.10)',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
+  },
+
+  lengthInlineButton: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(243, 211, 106, 0.14)',
+    backgroundColor: 'rgba(243,211,106,0.12)',
     borderWidth: 1,
-    borderColor: 'rgba(243, 211, 106, 0.38)',
+    borderColor: 'rgba(243,211,106,0.30)',
   },
 
-  saveButtonText: {
-    fontSize: 19,
+  lengthInlineButtonText: {
+    color: PAGE_COLORS.gold,
+    fontSize: 16,
     fontWeight: '900',
-    color: '#F7DE8A',
+    lineHeight: 18,
+    marginTop: -1,
   },
 
-  saveButtonSubtext: {
+  lengthInlineValueWrap: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  lengthInlineValue: {
+    fontSize: 15,
+    fontWeight: '900',
+    color: '#FFFFFF',
+  },
+
+  lengthInlineSubtext: {
     marginTop: 2,
-    fontSize: 12,
-    fontWeight: '800',
-    color: 'rgba(247,222,138,0.82)',
+    fontSize: 11,
+    fontWeight: '700',
+    color: 'rgba(220,230,255,0.58)',
+  },
+
+  continueButton: {
+    ...sharedPageStyles.primaryButton,
+    marginTop: 4,
+    marginBottom: 8,
+  },
+
+  continueButtonText: {
+    ...sharedPageStyles.primaryButtonText,
   },
 });
